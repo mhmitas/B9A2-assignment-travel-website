@@ -6,13 +6,15 @@
     margin: 0;
     padding: 0;
 }
+body{
+    margin: 0;
+}
 
+nav,
 header,
 main {
-    /* width: 81.25%; */
     max-width: 1170px;
     margin: 0 auto;
-    min-height: 200px;
 }
 
 .common-description {
@@ -48,10 +50,61 @@ main {
     font-weight: 700;
 }
 
-/* banner styles */
-header {
-    border: 1px solid;
+.subscribe:hover {
+    background-color: #04AA6D;
+    color: white;
+    border: 3px solid yellow;
 }
+
+.btn-primary:hover {
+    background-color: #04AA6D;
+    color: white;
+    border: 3px solid yellow;
+}
+
+
+#orenge-font1,
+#orange-font2,
+#orenge-font3 {
+    color: #FF5400;
+}
+
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 44px;
+    color: #161617;
+    font-size: 20px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+/* banner styles */
 
 .banner {
     background-image: linear-gradient(180deg, #131318cc 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/bannerimage.png);
@@ -113,7 +166,6 @@ select {
 
 /* tour section styles */
 .tours {
-    border: 2px solid blueviolet;
     display: flex;
     gap: 53px;
     margin-top: 100px;
@@ -121,7 +173,6 @@ select {
 
 .tour-texts {
     max-width: 577px;
-    border: 2px solid yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,7 +207,6 @@ select {
 }
 
 .destinetion-img-container {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -186,7 +236,6 @@ select {
 /* choose section styles */
 .choose {
     margin-top: 100px;
-    border: 2px solid pink;
 }
 
 .card {
@@ -241,7 +290,6 @@ select {
 .choose-paragraph {
     max-width: 643px;
     color: rebeccapurple;
-    border: 2px solid pink;
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -330,12 +378,12 @@ footer {
     margin: 0 auto;
 }
 
-.footer-title{
+.footer-title {
     max-height: 50px;
-    border: 1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 110px;
 
 }
 
@@ -360,7 +408,7 @@ footer h3 {
 
 .right-p {
     margin: 50px auto;
-    color: #131318;
+    color: #000000;
     font-size: 16px;
     font-weight: 300;
     padding-bottom: 60px;
@@ -429,6 +477,14 @@ footer h3 {
 
     .card {
         padding: 15px;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        padding-left: 15px;
     }
 
 }
